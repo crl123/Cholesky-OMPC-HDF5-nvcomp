@@ -36,23 +36,32 @@ srun --mpi=pmi2 -N $SLURM_JOB_NUM_NODES singularity ./cholesky <dim> <nb> <data_
 **Parameter	Description**
 <table>
   <tr>
-    <td>Celda 1</td>
-    <td>Celda 2</td>
+    <td>`<dim>`</td>
+    <td> `<nb>`</td>
+    <td>`<data_path>` </td>
+    <td>`<r>` </td>
+    <td>`<workers>` </td>
   </tr>
   <tr>
-    <td>Celda 3</td>
-    <td>Celda 4</td>
+    <td> The total dimension of the square matrix. </td>
+    <td> The block size.</td>
+    <td> The file path for the HDF5 matrix data example /home/usr/dataset/prove.h5.</td>
+    <td> Represents the side length of the Square Block Cyclical (SBC) grid. </td>
+    <td> The number of OMPC worker nodes. </td>
   </tr>
 </table>
-
-`<dim>`	      The total dimension of the square matrix.
-`<nb>`	      The block size.
-`<data_path>` The file path for the HDF5 matrix data example /home/usr/dataset/prove.h5.
-`<r>`    	    The number of blocks per row/column.
-`<workers>`	  The number of OpenMP worker nodes or devices.
+	  
 **Runtime Configuration**
-`<num_hidden>` Specifies the number of helper threads managed by the head node to manage the work on the worker nodes.
-`<num_exec>`   Determines the number of event handler threads per worker node. These threads are responsible for processing offloading events and managing GPU kernel launches.
+<table>
+  <tr>
+    <td>`<num_hidden>` </td>
+    <td> `<num_exec>`</td>
+  </tr>
+  <tr>
+    <td> Specifies the number of helper threads managed by the head node to manage the work on the worker nodes. </td>
+    <td> Determines the number of event handler threads per worker node. These threads are responsible for processing offloading events and managing GPU kernel launches.</td>
+  </tr>
+</table>   
 For more detailed information on these parameters, please refer to the official [OMPCluster documentation] (https://ompcluster.readthedocs.io/en/latest/).
 make -j48
 For more detailed information on these parameters, please refer to the official OMPCluster documentation.
