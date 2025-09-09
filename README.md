@@ -1,5 +1,5 @@
 # Cholesky Factorization on Heterogeneous Clusters
-This project implements a high-performance, out-of-core Cholesky factorization algorithm. It is designed to efficiently handle large, dense matrices that exceed a single node's memory capacity. The solution leverages a combination of MPI, OpenMP, CUDA, and HDF5 to distribute computational tasks and manage data across a cluster of nodes equipped with GPUs.
+This project implements a high-performance, out-of-core Cholesky factorization algorithm. It is designed to efficiently handle large, dense matrices that exceed a single node's memory capacity. The solution leverages a combination of OMPC, CUDA, NVCOMP, and HDF5 to distribute computational tasks and manage data across a cluster of nodes equipped with GPUs.
 # Key Features
 * **Out-of-Core Execution:** Processes matrices larger than available main memory by storing blocks on disk using the HDF5 library.
 * **Hybrid Parallelism:** Combines OMPC for inter-node communication.
