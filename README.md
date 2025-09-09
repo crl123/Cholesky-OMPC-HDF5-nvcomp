@@ -36,7 +36,7 @@ srun --mpi=pmi2 -N $SLURM_JOB_NUM_NODES singularity ./cholesky <dim> <nb> <data_
 **Parameter	Description**
 <table>
   <tr>
-    <td> `&lt;dim&gt;` </td>
+    <td> <code>`&lt;dim&gt;`</code> </td>
     <td> The total dimension of the square matrix. </td>
   </tr>
   <tr>
