@@ -37,16 +37,22 @@ srun --mpi=pmi2 -N $SLURM_JOB_NUM_NODES singularity ./cholesky <dim> <nb> <data_
 <table>
   <tr>
     <td> `<dim>` </td>
-    <td> `<nb>` </td>
-    <td> `<data_path>` </td>
-    <td> `<r>` </td>
-    <td> `<workers>` </td>
+    <td> The total dimension of the square matrix. </td>
   </tr>
   <tr>
-    <td> The total dimension of the square matrix. </td>
+    <td> `<nb>` </d>
     <td> The block size.</td>
+  </tr>
+  <tr>
+    <td> `<data_path>` </td>
     <td> The file path for the HDF5 matrix data example /home/usr/dataset/prove.h5.</td>
+  </tr>
+  <tr>
+    <td> `<r>` </td>
     <td> Represents the side length of the Square Block Cyclical (SBC) grid. </td>
+  </tr>
+  <tr>
+    <td> `<workers>` </td>
     <td> The number of OMPC worker nodes. </td>
   </tr>
 </table>
