@@ -13,7 +13,8 @@ To build and run this project, you need the following dependencies installed on 
 * **HDF5:** A version of the HDF5 library with parallel I/O support (version 1.14.6 or newer).
 # Building the Project
 Follow these steps to build the project. The build process uses CMake to configure the project with the necessary library paths.
-```git clone https://github.com/your-username/your-repo-name.git
+```
+git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
 mkdir build
 cd build
@@ -26,12 +27,24 @@ cmake .. \
 ```
 # How to Run
 After building, you can run the executable using the srun command.
-``` export LIBOMP_NUM_HIDDEN_HELPER_THREADS=<num_hidden>
+```
+export LIBOMP_NUM_HIDDEN_HELPER_THREADS=<num_hidden>
 export OMP_NUM_THREADS=<omp_num>
 export OMPCLUSTER_NUM_EXEC_EVENT_HANDLERS=<num_exec>
 srun --mpi=pmi2 -N $SLURM_JOB_NUM_NODES singularity ./cholesky <dim> <nb> <data_path> <r> <workers>
 ```
 **Parameter	Description**
+<table>
+  <tr>
+    <td>Celda 1</td>
+    <td>Celda 2</td>
+  </tr>
+  <tr>
+    <td>Celda 3</td>
+    <td>Celda 4</td>
+  </tr>
+</table>
+
 `<dim>`	      The total dimension of the square matrix.
 `<nb>`	      The block size.
 `<data_path>` The file path for the HDF5 matrix data example /home/usr/dataset/prove.h5.
