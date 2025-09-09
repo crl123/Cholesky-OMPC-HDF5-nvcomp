@@ -68,6 +68,7 @@ srun --mpi=pmi2 -N $SLURM_JOB_NUM_NODES singularity ./cholesky <dim> <nb> <data_
     <td> Determines the number of event handler threads per worker node. These threads are responsible for processing offloading events and managing GPU kernel launches.</td>
   </tr>
 </table>   
-For more detailed information on these parameters, please refer to the official [OMPCluster documentation] (https://ompcluster.readthedocs.io/en/latest/).
-make -j48
-For more detailed information on these parameters, please refer to the official OMPCluster documentation.
+For more detailed information on these parameters, please refer to the official 
+
+[OMPCluster documentation](https://ompcluster.readthedocs.io/en/latest/)
+
