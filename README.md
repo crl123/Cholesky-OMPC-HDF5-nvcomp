@@ -20,9 +20,9 @@ cd build
 export CC=clang
 export CXX=clang++
 cmake .. \
-    -DCMAKE_PREFIX_PATH="/usr/lib;/usr/local;/opt/libraries/" \
-    -Dnvcomp_DIR="/usr/local/nvcomp/lib/cmake/nvcomp/" \
-    -DZSTD_ROOT="/usr/local/zstd/" ```
+    -DCMAKE_PREFIX_PATH=/usr/lib;/usr/local;/opt/libraries/ \
+    -Dnvcomp_DIR=/usr/local/nvcomp/lib/cmake/nvcomp/ \
+    -DZSTD_ROOT=/usr/local/zstd/ ```
 # How to Run
 After building, you can run the executable using the srun command.
 ``` export LIBOMP_NUM_HIDDEN_HELPER_THREADS=<num_hidden>
