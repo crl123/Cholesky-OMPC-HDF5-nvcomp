@@ -14,7 +14,7 @@ To build and run this project, you need the following dependencies installed on 
 # Building the Project
 Follow these steps to build the project. The build process uses CMake to configure the project with the necessary library paths.
 ```
-git clone https://github.com/your-username/your-repo-name.git
+git clone--depth=1 -b main https://github.com/crl123/Cholesky-OMPC-HDF5-nvcomp.git
 cd your-repo-name
 mkdir build
 cd build
