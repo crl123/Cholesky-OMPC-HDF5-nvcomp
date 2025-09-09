@@ -22,13 +22,15 @@ export CXX=clang++
 cmake .. \
     -DCMAKE_PREFIX_PATH=/usr/lib;/usr/local;/opt/libraries/ \
     -Dnvcomp_DIR=/usr/local/nvcomp/lib/cmake/nvcomp/ \
-    -DZSTD_ROOT=/usr/local/zstd/ ```
+    -DZSTD_ROOT=/usr/local/zstd/
+```
 # How to Run
 After building, you can run the executable using the srun command.
 ``` export LIBOMP_NUM_HIDDEN_HELPER_THREADS=<num_hidden>
 export OMP_NUM_THREADS=<omp_num>
 export OMPCLUSTER_NUM_EXEC_EVENT_HANDLERS=<num_exec>
-srun --mpi=pmi2 -N $SLURM_JOB_NUM_NODES singularity ./cholesky <dim> <nb> <data_path> <r> <workers> ```
+srun --mpi=pmi2 -N $SLURM_JOB_NUM_NODES singularity ./cholesky <dim> <nb> <data_path> <r> <workers>
+```
 **Parameter	Description**
 `<dim>`	      The total dimension of the square matrix.
 `<nb>`	      The block size.
