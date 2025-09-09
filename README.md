@@ -36,23 +36,23 @@ srun --mpi=pmi2 -N $SLURM_JOB_NUM_NODES singularity ./cholesky <dim> <nb> <data_
 **Parameter	Description**
 <table>
   <tr>
-    <td> `\<dim\>` </td>
+    <td> `&lt;dim&gt;` </td>
     <td> The total dimension of the square matrix. </td>
   </tr>
   <tr>
-    <td> `\<nb\>` </d>
+    <td> `&lt;nb&gt;` </d>
     <td> The block size.</td>
   </tr>
   <tr>
-    <td> `\<data_path\> </td>
+    <td> `&lt;data_path&gt;` </td>
     <td> The file path for the HDF5 matrix data example /home/usr/dataset/prove.h5.</td>
   </tr>
   <tr>
-    <td> `\<r\>` </td>
+    <td> `&lt;r&gt;` </td>
     <td> Represents the side length of the Square Block Cyclical (SBC) grid. </td>
   </tr>
   <tr>
-    <td> `\<workers\>` </td>
+    <td> `&lt;workers&gt;` </td>
     <td> The number of OMPC worker nodes. </td>
   </tr>
 </table>
@@ -60,11 +60,11 @@ srun --mpi=pmi2 -N $SLURM_JOB_NUM_NODES singularity ./cholesky <dim> <nb> <data_
 **Runtime Configuration**
 <table>
   <tr>
-    <td>`\<num_hidden\> </td>
+    <td>`&lt;num_hidden&gt;` </td>
     <td> Specifies the number of helper threads managed by the head node to manage the work on the worker nodes. </td>
   </tr>
   <tr>
-    <td> `\<num_exec\></td>
+    <td> `&lt;num_exec&gt;`</td>
     <td> Determines the number of event handler threads per worker node. These threads are responsible for processing offloading events and managing GPU kernel launches.</td>
   </tr>
 </table>   
